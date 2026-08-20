@@ -1,0 +1,10 @@
+# Default financial extraction queries (Prompt 3)
+queries:
+  - total revenue
+  - gross profit margin
+  - year-over-year revenue growth
+  - sequential revenue growth
+  - data center revenue
+  - GAAP diluted EPS
+  - GAAP net income
+  - full-year revenue

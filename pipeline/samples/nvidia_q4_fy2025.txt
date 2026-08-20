@@ -1,0 +1,17 @@
+NVIDIA Corporation
+Sample Quarterly Financial Commentary — Q4 Fiscal 2025
+(Demo document for grounded extraction. Figures are taken from NVIDIA's public Q4 FY2025 earnings release dated 26 February 2025 and restated here as plain text.)
+
+SANTA CLARA, Calif. — NVIDIA reported record revenue of $39.3 billion for the fourth quarter of fiscal 2025, ended January 26, 2025. Revenue increased 78 percent from a year ago and increased 12 percent from the prior quarter.
+
+GAAP gross profit margin was 73.0 percent. Non-GAAP gross profit margin was 73.5 percent. GAAP net income was $22.1 billion. GAAP diluted earnings per share was $0.89.
+
+Data Center revenue was $35.6 billion, up 16 percent from the prior quarter and up 93 percent from a year ago. Gaming revenue was $2.5 billion. Professional Visualization revenue was $511 million. Automotive revenue was $570 million.
+
+Full-year fiscal 2025 revenue was $130.5 billion, up 114 percent from fiscal 2024. Full-year GAAP diluted earnings per share was $2.94.
+
+CFO commentary: "Record revenue of $39.3 billion was driven by Data Center demand for Hopper and the initial ramp of Blackwell. Sequential growth of 12 percent and year-over-year growth of 78 percent reflect continued acceleration in accelerated computing."
+
+Outlook: First-quarter fiscal 2026 revenue is expected to be $43.0 billion, plus or minus 2 percent. The company expects GAAP gross margin of 70.6 percent and non-GAAP gross margin of 71.0 percent for the first quarter.
+
+Forward-looking statements. This sample commentary is provided only to exercise a local extraction pipeline. Always verify figures against the official Form 8-K and earnings presentation on NVIDIA's investor relations site.

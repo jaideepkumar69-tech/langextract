@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "langextract": {
+      "command": "C:\\Users\\USER\\projects\\langextract\\pipeline\\.venv\\Scripts\\python.exe",
+      "args": [
+        "C:\\Users\\USER\\projects\\langextract\\mcp\\server.py"
+      ]
+    }
+  }
+}

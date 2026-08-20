@@ -57,7 +57,9 @@ dependencies = [
 
 [project.optional-dependencies]
 openai = ["openai>=1.50.0"]
-all = ["openai>=1.50.0"]
+anthropic = ["anthropic>=0.40.0"]
+xai = ["openai>=1.50.0"]
+all = ["openai>=1.50.0", "anthropic>=0.40.0"]
 dev = [
     "pyink==24.3.0",
     "isort==5.13.2",
@@ -95,6 +97,8 @@ langextract = ["py.typed"]
 gemini = "langextract.providers.gemini:GeminiLanguageModel"
 ollama = "langextract.providers.ollama:OllamaLanguageModel"
 openai = "langextract.providers.openai:OpenAILanguageModel"
+anthropic = "langextract.providers.anthropic:AnthropicLanguageModel"
+xai = "langextract.providers.xai:XAILanguageModel"
 
 [tool.setuptools.exclude-package-data]
 "*" = [

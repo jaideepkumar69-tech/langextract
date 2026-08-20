@@ -324,6 +324,51 @@ See the detailed guide in [Provider System Documentation](langextract/providers/
 - Optionally provide a schema with `get_schema_class()` for structured output
 - Integrate with the factory via `create_model(...)`
 
+## Using Claude (Anthropic) Models
+
+LangExtract routes `claude-*` model IDs to the Anthropic Messages API
+(requires `pip install langextract[anthropic]`). Current-generation defaults:
+
+| Role | Model ID |
+|---|---|
+| Default (speed + intelligence) | `claude-sonnet-5` |
+| Flagship agentic / extraction | `claude-opus-5` |
+| Frontier | `claude-fable-5` |
+| Fast / cheap | `claude-haiku-4-5` |
+
+```python
+import langextract as lx
+
+# ANTHROPIC_API_KEY in the environment is picked up automatically.
+result = lx.extract(
+    text_or_documents=input_text,
+    prompt_description=prompt,
+    examples=examples,
+    model_id="claude-sonnet-5",
+)
+```
+
+## Using Grok (xAI) Models
+
+LangExtract routes `grok-*` model IDs to xAI's OpenAI-compatible API
+(requires `pip install langextract[xai]` or `langextract[openai]`).
+The current default is **Grok 4.6**.
+
+```python
+import langextract as lx
+
+# XAI_API_KEY in the environment is picked up automatically.
+result = lx.extract(
+    text_or_documents=input_text,
+    prompt_description=prompt,
+    examples=examples,
+    model_id="grok-4.6",
+)
+```
+
+The xAI base URL defaults to `https://api.x.ai/v1` (override with `XAI_BASE_URL`
+or `provider_kwargs={"base_url": "..."}`).
+
 ## Using OpenAI Models
 
 LangExtract supports OpenAI models (requires optional dependency: `pip install langextract[openai]`):
@@ -530,6 +575,19 @@ If you use LangExtract in your research, please cite it:
 Cite the version you used — each release has its own DOI on
 [Zenodo](https://doi.org/10.5281/zenodo.17015089). If your style rejects
 `@software`, use `@misc`.
+
+## Local grounded pipeline (this checkout)
+
+This clone also ships a LangChain extraction + review UI that is wired into Claude Desktop, Claude CLI, Grok Build CLI, and (via a public MCP tunnel) grok.com / Grok Desktop. It does not change the library API.
+
+```powershell
+powershell -File pipeline\setup_env.ps1
+.\START.bat pipeline
+.\REVIEW.bat
+powershell -File scripts\register.ps1
+```
+
+Details: [pipeline/README.md](pipeline/README.md).
 
 ## Disclaimer
 

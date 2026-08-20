@@ -42,6 +42,11 @@ htmlcov/
 # Generated Output & Data
 # LangExtract outputs are defaulted to test_output/
 /test_output/
+pipeline/.venv/
+pipeline/.venv-langflow/
+pipeline/outputs/
+packs/grok-web/http.pid
+packs/grok-web/PUBLIC_URL.txt
 
 # Sphinx documentation build output
 docs/_build/
